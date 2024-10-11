@@ -1,3 +1,5 @@
 export default function loadBalancer(chinaDownload, USDownload) {
-  return Promise.any([chinaDownload, USDownload]);
+  const result = [];
+  result.push(Promise.any([chinaDownload, USDownload]));
+  return (result);
 }
