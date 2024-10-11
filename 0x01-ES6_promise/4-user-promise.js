@@ -1,5 +1,7 @@
-function signUpUser(firstName, lastName) {
-  return new Promise(() => {
-    const ;
-  })
+export default async function signUpUser(firstName, lastName) {
+  const person = {
+    firstName,
+    lastName,
+  };
+  return (person);
 }
