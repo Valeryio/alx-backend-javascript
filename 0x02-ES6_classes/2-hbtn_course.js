@@ -14,6 +14,8 @@ export default class HolbertonCourse {
     
     if (Array.isArray(students)) {
       this._students = students;
+    } else {
+      throw new Error('');
     }
   }
 
@@ -48,6 +50,8 @@ export default class HolbertonCourse {
   set students(students) {
     if (Array.isArray(students)) {
       this._students = students;
+    } else {
+      throw new Error('');
     }
   }
 }
