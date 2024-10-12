@@ -1,8 +1,8 @@
-import Currency from "./3-currency";
+import Currency from './3-currency';
 
 export default class Building {
   constructor(sqft) {
-    if (this.constructor = Currency) {
+    if (this.constructor === Currency) {
       throw new Error('Class extending Building must override evacuationWarningMessage');
     }
     this._sqft = sqft;
@@ -17,6 +17,6 @@ export default class Building {
   }
 
   evacuationWarningMessage() {
-    throw new Error('Class extending Building must override evacuationWarningMessage');
+    throw new Error(`Class extending Building must override evacuationWarningMessage ${this._sqft}`);
   }
 }
