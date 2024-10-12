@@ -8,10 +8,10 @@ export default class HolbertonCourse {
 
     if (typeof length === 'number') {
       this._length = length;
-    } else {  
+    } else {
       throw new Error('TypeError: Length must be a string');
     }
-    
+
     if (Array.isArray(students)) {
       this._students = students;
     } else {
