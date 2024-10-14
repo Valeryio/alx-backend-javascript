@@ -7,18 +7,16 @@ export default function cleanSet(set, startString) {
   }
 
   for (let i = 0; i < newSet.length; i += 1) {
-    
     if (newSet[i] === undefined) {
       result = `${result}-`;
-      continue;
-    }
+    } else {
+      if (i !== 0 && i !== (newSet.length - 1)) {
+        result = `${result}-`;
+      }
 
-    if (i !== 0 && i !== (newSet.length - 1)) {
-      result = `${result}-`;
-    }
-
-    if (newSet[i].startsWith(startString)) {
-      result += newSet[i].slice(startString.length);
+      if (newSet[i].startsWith(startString)) {
+        result += newSet[i].slice(startString.length);
+      }
     }
   }
 
