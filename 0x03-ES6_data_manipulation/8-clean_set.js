@@ -7,6 +7,12 @@ export default function cleanSet(set, startString) {
   }
 
   for (let i = 0; i < newSet.length; i += 1) {
+    
+    if (newSet[i] === undefined) {
+      result = `${result}-`;
+      continue;
+    }
+
     if (i !== 0 && i !== (newSet.length - 1)) {
       result = `${result}-`;
     }
