@@ -1,6 +1,6 @@
 const fs = require('node:fs');
 
-function countStudents(path) {
+function countStudents(path = 'database.csv') {
   fs.readFile(path, 'utf8', (err, data) => {
     if (err) {
       throw new Error('Cannot load the database');
