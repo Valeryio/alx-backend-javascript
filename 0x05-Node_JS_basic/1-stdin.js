@@ -5,7 +5,9 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question('Welxome to Holberton School, what is your name?\n', (answer) => {
+rl.question('Welcome to Holberton School, what is your name?\n', (answer) => {
   console.log(`Your name is: ${answer}`);
+
+  console.log('This important software is now closing');
   rl.close();
 });
