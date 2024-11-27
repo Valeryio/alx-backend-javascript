@@ -4,9 +4,15 @@
   "description": "## General - How to use Mocha to write a test suite - How to use different assertion libraries (Node or Chai) - How to present long test suites - When and how to use spies - When and how to use stubs - What are hooks and when to use them - Unit testing with Async functions - How to write integration tests with a small node server",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "mathjs": "^14.0.0",
+    "mocha": "^10.8.2"
+  },
+  "type": "module"
 }
