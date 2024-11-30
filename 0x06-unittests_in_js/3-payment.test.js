@@ -4,7 +4,7 @@
 
 const sinon = require('sinon');
 const Utils = require('./utils');
-const payment = require('./3-payment');
+const sendPaymentRequestToApi = require('./3-payment');
 
 
 
@@ -12,7 +12,7 @@ const utils = Utils;
 const utilSpy = sinon.spy(utils, 'calculateNumber');
 
 
-payment.sendPaymentRequestToApi(10, 3);
+sendPaymentRequestToApi(10, 3);
 
 
 console.log(utilSpy.called);

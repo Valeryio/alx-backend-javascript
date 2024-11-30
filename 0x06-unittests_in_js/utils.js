@@ -1,4 +1,4 @@
-import * as math from 'mathjs';
+const math = require('mathjs');
 
 const Utils = {
   calculateNumber(type, a, b) {
@@ -21,4 +21,4 @@ const Utils = {
   }
 }
 
-export default Utils;
+module.exports = Utils;
