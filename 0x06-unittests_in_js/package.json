@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^5.1.2",
     "mathjs": "^14.0.0",
     "mocha": "^10.8.2",
     "sinon": "^19.0.2"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
   }
 }

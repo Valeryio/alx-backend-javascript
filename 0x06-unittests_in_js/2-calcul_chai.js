@@ -1,6 +1,6 @@
-import * as math from "mathjs";
+const math = require('mathjs');
 
-export function calculateNumber(type, a, b) {
+function calculateNumber(type, a, b) {
   switch (type) {
     case "SUM":
       return math.round(a) + math.round(b);
@@ -18,3 +18,5 @@ export function calculateNumber(type, a, b) {
         console.log("");
   }
 }
+
+module.exports = calculateNumber;
